@@ -1,6 +1,6 @@
-$( document ).ready(function() {
+function myFunction() {
     document.getElementById("save").hidden = true;
-});
+}
 var blogBody = document.getElementById("blogBody");
 var blogTitleNew = document.getElementById("blogTitleNew");
 function editContent() {
