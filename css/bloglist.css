@@ -1,7 +1,21 @@
 body{
     color: black;
 }
+
+.allPostsContainer {
+    height: 100%;
+    width: 100%;
+    padding: 50px 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
 .post {
+    order: 2;
+    align-self: flex-start;
     position: relative;
     width: 40%;
     height: 20%;
@@ -12,8 +26,10 @@ body{
     margin-left: 40px;
     border-radius: 15px;
 }
-    
+
 .post-left {
+        margin-top: auto;
+        margin-bottom: auto;
         width: 15%;            
         max-width: 15%;
         display: table-cell;
@@ -23,7 +39,7 @@ body{
         color: #000;
 }
 .post-content {
-        width: 75%;           
+        width: 85%;
         display: table-cell;
         text-align: left;
         background-color: #E8E8E8;
@@ -33,6 +49,7 @@ body{
         overflow: hidden;
 }
 .post-title{
+    width: 85%;
     font-family: 'Itim', cursive;
     font-weight: bold;
     color: #2b312b;
@@ -62,12 +79,7 @@ body {
     background-color: orange;
     background-size: 2000% 2000%;
 }
-.allPostsContainer {
-    height: 100%;
-    width: 100%;
-    padding: 50px 50px;
 
-}
 .iconstyle{
     float: right;
 }
@@ -88,4 +100,11 @@ body {
     color: white;
     font-weight: bold;
     font-size: 20px;
+}
+
+@media screen and (max-width: 100px) {
+    .post-title{
+        width: 100%;
+        margin-bottom: 25%;
+    }
 }

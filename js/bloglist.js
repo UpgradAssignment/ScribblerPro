@@ -12,12 +12,6 @@ function pop() {
     deleteModal.style.display = "block";
 }
 
-window.onclick = function(event) {
-    if (event.target == deleteModal) {
-        deleteModal.style.display = "none";
-    }
-};
-
 close3.onclick = function() {
     deleteModal.style.display = "none";
 }

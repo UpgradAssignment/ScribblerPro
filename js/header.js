@@ -1,5 +1,7 @@
 var modal1 = document.getElementById("myModal1");
 var modal2 = document.getElementById("myModal2");
+var postModal = document.getElementById("postModal");
+var deleteModal = document.getElementById("myModal3");
 var close1 = document.getElementById("close1");
 var close2 = document.getElementById("close2");
 function signinmodal() {
@@ -26,5 +28,11 @@ window.onclick = function(event) {
     }
     if (event.target == modal2) {
         modal2.style.display = "none";
+    }
+    if (event.target == deleteModal) {
+        deleteModal.style.display = "none";
+    }
+    if (event.target == postModal) {
+        postModal.style.display = "none";
     }
 };
