@@ -5,14 +5,21 @@ function blogFunction() {
         descCollection[i].innerHTML = val;
     }
 }
-var count = 0;
+var deleteModal = document.getElementById("myModal3");
+var close3 = document.getElementById("close3");
+
 function pop() {
-    if(count == 0){
-        document.getElementById("box").style.visibility ="visible";
-        count=1;
-    }else{
-        document.getElementById("box").style.visibility ="hidden";
-        count=0;
-    }
+    deleteModal.style.display = "block";
 }
+
+window.onclick = function(event) {
+    if (event.target == deleteModal) {
+        deleteModal.style.display = "none";
+    }
+};
+
+close3.onclick = function() {
+    deleteModal.style.display = "none";
+}
+
 
